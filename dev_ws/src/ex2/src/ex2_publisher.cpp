@@ -18,8 +18,7 @@
 #include <string>
 
 #include "rclcpp/rclcpp.hpp"
-#include "std_msgs/msg/string.hpp"
-#include "std_msgs/msg/int32.hpp"
+#include "std_msgs/msg/char.hpp"
 
 using namespace std::chrono_literals;
 
@@ -32,7 +31,7 @@ public:
   MinimalPublisher()
       : Node("minimal_publisher"), count_(0)
   {
-    publisher_ = this->create_publisher<std_msgs::msg::Int32>("ex2", 10);
+    publisher_ = this->create_publisher<std_msgs::msg::Char>("ex2", 10);
     timer_ = this->create_wall_timer(
         500ms, std::bind(&MinimalPublisher::timer_callback, this));
   }
@@ -40,13 +39,14 @@ public:
 private:
   void timer_callback()
   {
-    std_msgs::msg::Int32 message;
-    message.data = count_++;
-    RCLCPP_INFO(this->get_logger(), "Publishing: '%d'", message.data);
+    auto message = std_msgs::msg::Char();
+    message.data = 'a' + (count_ % 26);
+    count_++;
+    RCLCPP_INFO(this->get_logger(), "Publishing: '%c'", message.data);
     publisher_->publish(message);
   }
   rclcpp::TimerBase::SharedPtr timer_;
-  rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr publisher_;
+  rclcpp::Publisher<std_msgs::msg::Char>::SharedPtr publisher_;
   size_t count_;
 };
 
