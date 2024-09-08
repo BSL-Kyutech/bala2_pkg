@@ -1,0 +1,4 @@
+source;share/bala2_controler/local_setup.bash
+source;share/bala2_controler/local_setup.dsv
+source;share/bala2_controler/local_setup.sh
+source;share/bala2_controler/local_setup.zsh

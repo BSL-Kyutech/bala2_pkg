@@ -1,0 +1,6 @@
+Invoking command in '/home/izumi/dev_ws/build/bala2_controler': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/izumi/dev_ws/src/bala2_controler -DCMAKE_INSTALL_PREFIX=/home/izumi/dev_ws/install/bala2_controler
+Invoked command in '/home/izumi/dev_ws/build/bala2_controler' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/izumi/dev_ws/src/bala2_controler -DCMAKE_INSTALL_PREFIX=/home/izumi/dev_ws/install/bala2_controler
+Invoking command in '/home/izumi/dev_ws/build/bala2_controler': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/izumi/dev_ws/build/bala2_controler -- -j8 -l8
+Invoked command in '/home/izumi/dev_ws/build/bala2_controler' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/izumi/dev_ws/build/bala2_controler -- -j8 -l8
+Invoking command in '/home/izumi/dev_ws/build/bala2_controler': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/izumi/dev_ws/build/bala2_controler
+Invoked command in '/home/izumi/dev_ws/build/bala2_controler' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/izumi/dev_ws/build/bala2_controler
