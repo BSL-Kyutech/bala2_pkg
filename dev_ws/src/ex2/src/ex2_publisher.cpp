@@ -29,9 +29,9 @@ class MinimalPublisher : public rclcpp::Node
 {
 public:
   MinimalPublisher()
-      : Node("micro_ros_arduino_node"), count_(0)
+      : Node("minimal_publisher"), count_(0)
   {
-    publisher_ = this->create_publisher<std_msgs::msg::String>("/bala2/talker", 10);
+    publisher_ = this->create_publisher<std_msgs::msg::String>("ex2", 10);
     timer_ = this->create_wall_timer(
         500ms, std::bind(&MinimalPublisher::timer_callback, this));
   }
