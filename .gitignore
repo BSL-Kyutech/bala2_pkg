@@ -1,4 +1,4 @@
 dev_ws/src/bala2_controler
-dev_ws/log
-dev_ws/build
+dev_ws/log/*
+dev_ws/build/*
 dev_ws/install/bala2_controler
