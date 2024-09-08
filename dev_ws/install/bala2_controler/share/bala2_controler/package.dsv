@@ -1,0 +1,8 @@
+source;share/bala2_controler/hook/cmake_prefix_path.ps1
+source;share/bala2_controler/hook/cmake_prefix_path.dsv
+source;share/bala2_controler/hook/cmake_prefix_path.sh
+source;share/bala2_controler/local_setup.bash
+source;share/bala2_controler/local_setup.dsv
+source;share/bala2_controler/local_setup.ps1
+source;share/bala2_controler/local_setup.sh
+source;share/bala2_controler/local_setup.zsh
